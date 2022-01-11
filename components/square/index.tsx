@@ -1,4 +1,3 @@
-import { useRef } from "react"
 import { Animated, Text, StyleSheet } from "react-native"
 import { 
     PanGestureHandler, 
@@ -11,7 +10,7 @@ const Square = (props:{}) => {
 
     const translateX: Animated.Value = new Animated.Value(0)
     const translateY: Animated.Value = new Animated.Value(0)
-    const lastOffset: { x: number, y: number } = useRef({ x: 0, y: 0}).current
+    const lastOffset: { x: number, y: number } = { x: 0, y: 0}
 
     const onPanGestureEvent:(event:PanGestureHandlerGestureEvent) => void = Animated.event([
         {

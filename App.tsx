@@ -3,12 +3,14 @@ import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Circle from './components/circle';
 import Square from './components/square';
+import Triangle from './components/triangle';
 
 export default function App() {
   return (
     <GestureHandlerRootView style={styles.container}>
       <Circle/>
       <Square/>
+      <Triangle/>
       <StatusBar/>
     </GestureHandlerRootView>
   );
